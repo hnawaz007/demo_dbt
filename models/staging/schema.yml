@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+
+  - name: stg_state
+    description: US State Name and Code
+    columns:
+      - name: StateCode
+        description: The primary key for this table
+        tests:
+          - unique
+          - not_null
+          
