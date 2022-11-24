@@ -1,0 +1,6 @@
+version: 2
+
+models:
+
+  - name: dim_states
+    description:  Contains US States mapping
