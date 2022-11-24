@@ -6,7 +6,7 @@ models:
   - name: stg_state
     description: US State Name and Code
     columns:
-      - name: "StateCode"
+      - name: statecode
         description: The primary key for this table
         tests:
           - unique
