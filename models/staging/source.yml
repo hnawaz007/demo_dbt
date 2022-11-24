@@ -16,7 +16,7 @@ sources:
         description: >
           Contains US State Name and Code
         columns:
-          - name: StateCode
+          - name: "StateCode"
             description: The primary key for this table
             tests:
               - unique
