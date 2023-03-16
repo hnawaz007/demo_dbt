@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: src_postgres # name of the source 
+    schema: public # this is the schema our raw data lives in
+    database: AdventureWorks # this is the name of our database
+    
+    tables:
+      - name: src_dimproductcategory
