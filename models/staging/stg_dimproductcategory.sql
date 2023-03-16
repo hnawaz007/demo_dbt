@@ -10,6 +10,7 @@ renamed as (
 		englishproductcategoryname, 
 		spanishproductcategoryname, 
 		productcategoryalternatekey
+
     from source
 )
 
