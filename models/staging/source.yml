@@ -1,24 +1,9 @@
 version: 2
 
 sources:
-
-  - name: src_sql # name of the source 
-    schema: warehouse # this is the schema our raw data lives in
-    database: dbt # this is the name of our database
-
-    quoting:
-      database: false
-      schema: false
-      identifier: false
-
+  - name: src_postgres # name of the source 
+    schema: public # this is the schema our raw data lives in
+    database: AdventureWorks # this is the name of our database
+    
     tables:
-      - name: states
-        description: >
-          Contains US State Name and Code
-        columns:
-          - name: statecode
-            description: The primary key for this table
-            tests:
-              - unique
-              - not_null
-          
+      - name: src_dimproductcategory
