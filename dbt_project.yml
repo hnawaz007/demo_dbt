@@ -22,12 +22,13 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-target-path: "target"  # directory which will store compiled SQL files
+target-path: "../build"  # directory which will store compiled SQL files
 log-path: "../logs"  # directory which will store DBT logs
-modules-path: "../dbt_modules"
+modules-path: "/tmp/dbt_modules"  # directory which will store external DBT dependencies
+
 clean-targets:         # directories to be removed by `dbt clean`
-  - "build"
-  - "dbt_modules"
+    - "build"
+    - "dbt_modules"
 
 
 # Configuring models
